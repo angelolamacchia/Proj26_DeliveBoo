@@ -1,0 +1,40 @@
+/* Create del Payment */
+
+.payment_container {
+    background-color: $back_home_1;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    h2:first-child {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    h2:last-child {
+        border-radius: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    p {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+    }
+    button {
+        // margin-left: 20px;
+    }
+    .form_order {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+}
+
+
+/* Pagamento con carta */
+
+.payment_card {
+    padding-bottom: 50px;
+    margin: 15vh 0;
+}

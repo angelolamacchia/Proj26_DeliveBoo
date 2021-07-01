@@ -1,0 +1,85 @@
+#corpo_admin_profile {
+    padding-left: 220px;
+    padding-top: 17px;
+    width: 100%;
+    h1 {
+        font-size: 3.3em;
+        font-weight: bold;
+        color: rgb(4, 82, 4);
+        margin-bottom: 20px;
+    }
+    .your_profile {
+        width: 100%;
+        .datas {
+            width: 100%;
+            margin-top: 30px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            p {
+                background-color: #f2efc4;
+                color: rgb(107, 107, 107);
+                width: 70%;
+                padding: 10px;
+                border-radius: 15px;
+                border-bottom: 3px solid grey;
+                border-left: 3px solid grey;
+            }
+        }
+    }
+}
+
+.img_wrapper {
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    width: 12vw;
+    border: 5px solid white;
+    vertical-align: middle;
+}
+
+.banner_profile {
+    position: relative;
+    width: 60vw;
+    margin-bottom: 40px;
+    .banner {
+        width: 100%;
+    }
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 905px) {
+    .your_profile>img {
+        width: 130px!important;
+    }
+
+    .img_wrapper {
+        img {
+            width: 15vw;
+        }   
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .datas p {
+        width: 220px!important;
+    }
+    #corpo_admin_profile {
+        padding-left: 0px;
+    }
+
+    .img_wrapper {
+        img {
+            width: 20vw;
+        }   
+    }
+}

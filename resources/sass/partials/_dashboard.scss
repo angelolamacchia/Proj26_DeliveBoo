@@ -1,0 +1,132 @@
+/* Sidebar import */
+
+.main_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: $colore_sidebar;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.nav_top {
+    display: flex;
+    flex-direction: column;
+    min-height: 307px;
+    overflow: hidden;
+}
+
+.collegamento {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.sideawesome {
+    font-size: 1.7em;
+    margin-right: 10px;
+}
+
+.collegamento,
+.sideawesome {
+    color: white;
+}
+
+.collegamento:hover,
+.collegamento:hover .sideawesome {
+    color: lightgrey!important;
+}
+
+.dashboard_footer {
+    margin-top: 70px;
+}
+
+.sidebar {
+    height: 80vh;
+}
+
+#dashboard_body {
+    background-color: $general_back;
+}
+
+.background_side {
+    background-color: skyblue;
+}
+
+.nav_container {
+    li {
+        display: flex;
+        margin-bottom: 10px;
+        a {
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.navbar {
+    position: relative;
+}
+
+.dropdown_my {
+    background-color: white;
+    position: absolute;
+    top: 68px;
+    right: 5px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    
+    .fa-times {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    ul {
+        padding: 20px;
+        margin-bottom: 0;
+
+        li {
+            margin: 5px auto;
+
+            a {
+                margin: 0;
+            }
+
+        }
+    }
+}
+
+
+/* Media Query */
+@media screen and (max-width: 769px) {
+    #dashboard_body {
+        padding-left: 80px;
+    }
+    .main_nav {
+        // width: fit-content;
+        width: 80px;
+        li {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            a {
+                margin: 0;
+            }
+            .text_hidden {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 765px) {
+    .none_button {
+        display: none;
+    }
+}

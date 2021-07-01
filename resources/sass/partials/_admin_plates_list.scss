@@ -1,0 +1,233 @@
+.admin_plates_container {
+    padding-left: 220px;
+    padding-top: 17px;
+    width: 100%;
+    height: 50vh;
+    .ms_container {
+        margin-top: 30px;
+    }
+    button {
+        @include principal_button;
+        color: whitesmoke;
+        box-shadow: 5px 2px 5px grey;
+    }
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+        color: rgb(4, 82, 4);
+        margin-bottom: 20px;
+    }
+    .single_plate {
+        position: relative;
+        background: #f2efc4!important;
+        .m_top {
+            margin-top: 70px;
+        }
+        h3 {
+            right: -2%!important;
+            color: rgb(122, 34, 34);
+            border: 2px solid rgb(236, 233, 233);
+        }
+        button {
+            @include principal_button;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .delete_button {
+            background-color: rgb(179, 0, 0);
+            border: 2px solid white;
+            &:hover {
+                background-color: red;
+            }
+        }
+        .modify_button {
+            background-color: rgb(44, 155, 199);
+            &:hover {
+                background-color: rgb(109, 184, 214);
+                border: 2px solid white;
+            }
+        }
+        .m_rgt_lft {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.admin_plates_container {
+    #delete_button {
+        button {
+            background-color: red;
+        }
+        button:hover {
+            background-color: rgb(194, 76, 76);
+        }
+    }
+}
+
+#button_container {
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 0%);
+    span {
+        padding: 0 5px;
+    }
+}
+
+#plate_admin {
+    padding-bottom: 260px;
+}
+
+.content_plate {
+    height: 100%;
+    padding: 10px 0;
+}
+
+#plate_id {
+    padding-bottom: 100px;
+}
+
+#button_cart {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plates_list {
+    margin-bottom: 200px;
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 765px) {
+    .admin_plates_container {
+        padding-left: 10px;
+    }
+    .single_plate .m_top {
+        margin-top: 80px;
+    }
+}
+
+
+/* @media screen and (max-width: 389px) {
+    .single_plate .m_top {
+        margin-top: 100px;
+    }
+} */
+
+
+/* Scontrino lista piatti ristorante specifico guests */
+
+.scontrino_container {
+    position: fixed;
+    top: 8.8%;
+    right: 1%;
+    z-index: 999;
+}
+
+.orders,
+.orders .col-12 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orders {
+    width: 100%;
+}
+
+.scontrino {
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgb(194, 228, 241)!important;
+    min-height: 270px;
+    max-height: 600px;
+    overflow-y: auto;
+    .fa-times {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 1.1em;
+        font-style: italic;
+        margin-top: 3px;
+        color: $text_color;
+        text-transform: uppercase;
+        background-color: $general_back;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid rgba(255, 255, 255, 0.849);
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        li {
+            list-style-type: none;
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+    }
+    .separatore {
+        display: block;
+        height: 1.5px;
+        background-color: rgb(71, 71, 99);
+        width: 100%;
+        margin-top: 5px;
+    }
+    button {
+        font-size: 0.85em!important;
+        border-radius: 5px;
+    }
+    .cancella_scntr {
+        font-size: 1.1!important;
+        padding: 5px!important;
+        background-color: red;
+        color: white;
+        &:hover {
+            background-color: rgba(255, 0, 0, 0.719)!important;
+        }
+    }
+    .checkout_btn {
+        margin-top: 5px!important;
+        margin-bottom: 5px!important;
+        font-size: 1em!important;
+        padding: 5px!important;
+        &:hover {
+            background-color: rgb(104, 178, 207)!important;
+        }
+    }
+}
+
+#carrello_button {
+    width: fit-content;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    .counter_cart {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: salmon;
+        border: 1px solid black;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        p {
+            line-height: 19px;
+            vertical-align: middle;
+        }
+    }
+}

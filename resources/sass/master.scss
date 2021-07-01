@@ -1,0 +1,14 @@
+@import "partials/mixins"; //mixins
+@import 'variables'; //variabili
+@import "partials/header"; //header
+@import "partials/footer"; //footer
+@import "partials/home"; //pagina home del guest e admin
+@import "partials/login_register"; //login
+@import "partials/restaurants_list"; //pagina guest lista ristoranti
+@import "partials/register"; //pagina di registrazione
+@import "partials/dashboard"; //dashboard
+@import "partials/profile_admin"; //pagina profilo admin
+@import "partials/admin_plates_list"; //pagina lista dei piatti
+@import "partials/create_and_edit_plate"; //pagina creazione piatto
+@import "partials/description_plate"; //pagina descrizione piatto
+@import "partials/payment"; //pagina del pagamento

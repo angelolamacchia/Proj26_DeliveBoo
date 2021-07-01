@@ -1,0 +1,45 @@
+@mixin my-flexed-main-container {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin my-button {
+    color: white;
+    padding: 5px;
+    font-family: $my_font_family;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    &:hover {
+        background-color: grey;
+    }
+}
+
+@mixin principal_button {
+    width: fit-content;
+    align-self: center;
+    background-color: $button_color;
+    padding: 10px;
+    border: 2px solid white;
+    font-size: 1.35em;
+    font-family: $my_font_family;
+    margin-top: 10px;
+    border-radius: 15px;
+    color: white;
+    &:hover {
+        background-color: rgb(90, 90, 90);
+        border: 2px solid brown;
+    }
+}
+
+@mixin separe-sections {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@mixin title {
+    font-size: 3.3em;
+    font-weight: bold;
+    color: rgb(4, 82, 4);
+    margin-bottom: 20px;
+}

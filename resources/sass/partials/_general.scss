@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+.navbar-toggler {
+    background: white!important;
+}
+
+.stats_container {
+    height: 100%!important;
+}
+
+// chart media
+@media screen and (max-width: 765px) {
+    #chart-container {
+        padding-left: 0;
+    }
+}

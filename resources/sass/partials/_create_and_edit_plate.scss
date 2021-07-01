@@ -1,0 +1,95 @@
+.create_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 660px;
+    .return {
+        a button {
+            padding: 8px;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        a {
+            margin-bottom: 30px;
+        }
+    }
+    label {
+        font-weight: bold;
+        font-size: 1.4em;
+        span {
+            font-weight: lighter;
+        }
+    }
+    button {
+        font-weight: bold;
+    }
+    form {
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.123);
+        padding: 20px;
+        border-radius: 15px;
+    }
+    input,
+    textarea,
+    select {
+        font-size: 1.2em;
+    }
+    .prezzo {
+        width: 22%;
+    }
+    select {
+        border-radius: 5px;
+        margin-left: 10px;
+        padding: 3px;
+    }
+    form button {
+        font-size: 1.4em;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.modify_container {
+    margin-bottom: 670px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 855px) {
+    .create_container {
+        margin-bottom: 600px;
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+        }
+        .return a button {
+            display: none;
+        }
+        select {
+            margin-left: 0;
+            width: 100px;
+        }
+        form button {
+            text-align: center;
+        }
+    }
+    .modify_container {
+        margin-bottom: 730px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .create_container {
+        margin-bottom: 850px!important;
+    }
+    .modify_container {
+        margin-bottom: 730px!important;
+    }
+}
+
+@media screen and (max-width: 243px) {
+    .modify_container {
+        margin-bottom: 820px!important;
+    }
+}
